@@ -12,7 +12,7 @@
         width: 28px;
         height: 3px;
         margin: 0 0 5px;
-        background-color: #ffffff;
+        background-color: set-text-color($primary-color);
     }
 
     //Rotate into X menu lines
@@ -84,7 +84,8 @@
         .portrait {
             width: 250px;
             height: 250px;
-            background: url('../img/portrait.jpg');
+            background: url('../img/portrait.jpg') no-repeat center;
+            background-size: cover;
             border-radius: 50%;
             border: 3px solid $secondary-color;
         }
@@ -111,7 +112,7 @@
         text-transform: uppercase;
         padding: 1rem 0;
         font-weight: 400;
-        color: #ffffff;
+        color: set-text-color($primary-color-opacity);
         text-decoration: none;
         @include easeOut;
 
